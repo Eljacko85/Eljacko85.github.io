@@ -23,10 +23,13 @@ a {
   color: rgb(245, 150, 155);
   text-decoration-line: none; 
 }
+a:link {
+  color: rgb(245, 150, 155);
+  text-decoration-line: none; 
+}
 
 .td a:link, a:visited {
   background-color: white;
-  color: black;
   border: 2px solid rgb(245, 150, 155);
   padding: 5px 10px;
   text-align: center;
@@ -44,7 +47,7 @@ a {
 <img src="allyoucansing.png" align=center>
 <br><b>
 <h1><i>LIVE KARAOKE @ ANDA Hostel</i></h1><br>
-<h2>1. PICK A SONG FROM THE LIST BELOW<br><br>2. SIGNUP IN THE CHAT CHANNEL<br><br>3. COME SING IT!</h2>
+<h2>1. PICK A SONG FROM THE <a href="#songlist" target="_self">LIST</a> BELOW<br><br>2. SIGNUP IN THE CHAT CHANNEL<br><br>3. COME SING IT!</h2>
 <h2>4. IF YOU TOOK A NICE VIDEO, PLEASE TAG ME ON<br><a href="https://www.instagram.com/jackmoodyrocker"><img src="ig_icon_96.png"></a><br><a href="https://www.instagram.com/jackmoodyrocker">@JACKMOODYROCKER</a></h2><h3>TAGHIME DOSSO</h3>
 
 <br><br>
@@ -61,7 +64,7 @@ a {
 
 <div style="margin: 20px"><center>
 
-<H2>SONG LIST</h2>
+<H2 id="songlist">SONG LIST</h2>
 <table spacing=1 class="td">
 <tr><td><b>AUTHOR</b></td><td><b>SONG NAME</b></td><td><b>LYRICS</b></td></tr>
 <tr><td>Amy Lee</td><td>Broken</td><td><a href="">READ</a></td></tr>
