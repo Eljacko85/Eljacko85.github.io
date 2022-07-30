@@ -51,12 +51,11 @@
         }
 
         CsvToHtmlTable.init({
-            csv_path: "data/test.csv",
+            csv_path: "data/songlist.csv",
             element: "table-container",
             allow_download: false,
             csv_options: {
-                separator: ",",
-                delimiter: '"'
+                separator: ";"
             },
             datatables_options: {
                 paging: false
