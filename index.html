@@ -22,8 +22,6 @@ body {
 }
 td {
   text-align: center;
-  border-bottom: 1px solid #ddd;
-  padding: 5px;
 }
 a {
   color: rgb(245, 150, 155);
@@ -50,11 +48,11 @@ a:link {
 </style>
 <center>
 
-<img src="allyoucansing.png" align=center>
+<img src="img/allyoucansing.png" align=center>
 <br><b>
 <h1><i>LIVE KARAOKE @ ANDA Hostel</i></h1><br>
 <h2>1. PICK A SONG FROM THE <a href="#songlist" target="_self">LIST</a> BELOW<br><br>2. SIGNUP IN THE CHAT CHANNEL<br><br>3. COME SING IT!</h2>
-<h2>4. IF YOU TOOK A NICE VIDEO, PLEASE TAG ME ON<br><a href="https://www.instagram.com/jackmoodyrocker"><img src="ig_icon_96.png"></a><br><a href="https://www.instagram.com/jackmoodyrocker">@JACKMOODYROCKER</a></h2><h3>TAGHIME DOSSO</h3>
+<h2>4. IF YOU TOOK A NICE VIDEO, PLEASE TAG ME ON<br><a href="https://www.instagram.com/jackmoodyrocker"><img src="img/ig_icon_96.png"></a><br><a href="https://www.instagram.com/jackmoodyrocker">@JACKMOODYROCKER</a></h2><h3>TAGHIME DOSSO</h3>
 
 <br><br>
 
@@ -68,7 +66,7 @@ a:link {
 
 <br><H2 id="songlist">SONG LIST</h2>
 
-<div class="container-fluid">
+<div class="container-fluid" style="width: 100%; max-width: 400px;">
         <main class="row">
             <div class="col">
 		<div id="table-container" style="margin: 20px"></div>
@@ -78,6 +76,10 @@ a:link {
 </center>
 
 <!--
+
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+
 <div style="margin: 20px"><center>
 <H2 id="songlist">SONG LIST</h2>
 <table spacing=1 class="td">
@@ -190,7 +192,7 @@ a:link {
     <script>
         function format_link(link) {
             if (link)
-                return "<a href='https://www.google.com/search?q=" + link + "' target='blank'>READ</a>";
+                return "<a href='" + link + "' target='blank'>READ</a>";
             else return "";
         }
 
